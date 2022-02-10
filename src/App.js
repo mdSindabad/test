@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import FormMenu from "./components/FormMenu";
+import BlastCampaign from "./components/pages/BlastCampaign";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-light row p-5">
+      <div className='col-12'>
+        <h5>Trafic Blasts</h5>
+        <p className='text-secondary'>Home/ Utilities/ Wizards/ <span className='text-dark'>Vertical</span></p>
+      </div>
+      <div className="col-12 col-md-4">
+        <FormMenu />
+      </div>
+      <div className="col-12 col-md-8">
+        <BlastCampaign />
+      </div>
     </div>
   );
 }
